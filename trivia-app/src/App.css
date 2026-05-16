@@ -110,13 +110,13 @@ button:disabled {
 }
 
 .right-form {
-  margin: 50px;
+  margin: 110px;
   flex: 1;
   max-width: 500px;
 }
 
 .left-form {
-  margin: 50px;
+  margin: 110px;
   flex: 1.5;
   max-width: 500px;
 }
