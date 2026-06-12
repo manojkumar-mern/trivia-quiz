@@ -7,7 +7,7 @@ body {
   background: #f3f0ff;
   margin: 0;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 h2 {
@@ -171,22 +171,43 @@ button:disabled {
 }
 
 @media (max-width: 768px) {
+
+  body {
+    overflow-y: auto;
+  }
+
   .start-wrapper {
     flex-direction: column;
-    gap: 40px;
-    padding: 40px 20px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
     text-align: center;
   }
 
-  .left,
-  .right,
+  .left-form,
   .right-form {
+    margin: 0;
     max-width: 100%;
+    width: 100%;
   }
 
-  .right img,
+  .start-image img {
+    max-width: 280px;
+  }
+
   .left-image img {
-    max-width: 250px;
+    max-width: 280px;
+    transform: scale(1);
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
   }
 }
 
